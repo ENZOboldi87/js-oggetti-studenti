@@ -39,10 +39,12 @@
   ];
 
   // ciclo gli elementi e stampo per ognuno il nome e cognome
-  for(var key in studenti) {
-    var nomeCognomeStudenti = studenti[key].nome +  " " + studenti[key].cognome;
-    console.log(nomeCognomeStudenti);
-  };
+  for (var i = 0; i < studenti.length; i++) {
+    var singoliStudenti = studenti[i];
+    console.log(singoliStudenti.nome + " " + singoliStudenti.cognome);
+
+
+  }
 
   // con 3 prompt di domande chiedo nome,cognome,eta
   var newNomeUtente = prompt('Inserisci il nome');
